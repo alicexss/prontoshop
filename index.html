@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ProntoShop</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      header {
+        background: #ff5f00;
+        width: 100%;
+        height: 100%;
+        padding: 36px 0;
+
+        display: flex;
+        justify-content: center;
+        text-align: center;
+      }
+
+      header img {
+        width: 660px;
+      }
+
+      .section-1 {
+        position: relative;
+        width: 100%;
+
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      .section-1 p {
+        font-size: 42px;
+        font-weight: bold;
+        color: #003a5d;
+
+        display: flex;
+
+        position: absolute;
+        left: 5%;
+        top: 50%;
+
+        transform: translateY(-50%)
+      }
+
+      .section-1 img {
+        display: block;
+      }
+
+      .section-2 p {
+        background-color: #003a5d;
+        position: relative;
+      
+        color: #fff;
+        font-size: 42px;
+        font-weight: bold;
+        line-height: 50px;
+        width: 100%;
+        height:auto;
+          
+        margin: 0;
+        padding: 150px 5%;
+      }
+
+      .text-orange {
+        color:  #ff5f00;
+        display: block;
+        margin-bottom: 36px;
+      }
+
+      .section-3 {
+        width: 100%;
+        display: flex;
+      }
+
+      .section-3 img {
+        width: 40%;
+        margin: 0;
+      }
+
+      .section-3 div {
+        width: 60%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .section-3 p {
+        color:#003a5d;
+        font-size: 42px;
+        font-weight: bold;
+        line-height: 60px;
+      }
+
+      .section-4 p {
+        background-color: #67c18d;
+        font-size: 42px;
+        color:#003a5d;
+        font-weight: bold;
+        padding: 120px 5%;
+      }
+
+      .section-4 p span{
+        font-weight: normal;
+      }
+
+      .brands {
+        padding: 120px 5%;
+      }
+
+      .brands-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+      .brand {
+        width: 49%;
+        position: relative;
+        margin-bottom: 100px;
+      }
+
+      .brands p{
+        font-size: 42px;
+        color:#003a5d;
+        font-weight: bold;
+        margin-bottom: 120px;
+      }
+
+      .brands button {
+        background: #3abd51;
+        color: #fff;
+        font-size: 36px;
+        font-weight: bold;
+        border: none;
+        border-radius: 12px;
+        padding: 16px;
+        cursor: pointer;
+
+        position: absolute;
+        bottom: 0;
+        left: 10%;
+
+        transform: translateY(50%)
+        }
+
+        .brands img {
+        width:100%;
+      }
+
+      @media(max-width: 991px){
+        .brands button{
+          font-size: 24px;
+          padding: 12px;
+        }
+      }
+    
+      @media(max-width: 768px) {
+        header img {
+          width: 380px;
+          }
+         .section-1 p{
+           font-size: 38px;
+          }
+         .section-2 p {
+           font-size:38px;
+           line-height: 36px;
+           padding: 50px 5%;
+          }
+
+         .section-3{
+           display: flex;
+           flex-direction: column;
+          }
+
+         .section-3 div{
+           width: 100%;
+           display: block;
+          }
+        
+         
+         .section-3 p{
+          font-size: 38px;
+          line-height: 42px;
+          padding: 50px 5%;
+          }
+
+      
+         .section-3 img {
+          width: 100%;
+          }
+
+          .section-4 p{
+          font-size: 38px;
+          line-height: 42px;
+          padding: 50px 5%;
+          }
+
+          .brands {
+          padding: 50px 5%;
+          }
+
+          .brands p{
+          font-size: 38px;
+          margin-bottom: 60px;
+          }
+
+          .brand {
+          width: 100%;
+          }
+      }
+
+      @media(max-width: 540px) {
+
+        header img {
+          width: 280px;
+        }
+        .section-1 p{
+           font-size: 32px;
+         }
+         .section-2 p {
+           font-size:32px;
+           line-height: 30px;
+         }
+         .section-3 p{
+          font-size: 32px;
+           
+          }
+          .section-4 p{
+          font-size: 32px;      
+          }
+          .brands p{
+        font-size: 32px; 
+      }
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <img src="./images/logo.png" alt="logo" />
+    </header>
+
+    <section class="section-1">
+      <p>
+        O shopping da comida congelada. </br>
+        Um só lugar. Um só carrinho. </br>
+        Uma variedade incrível de comida </br>
+         boa e pra todos os momentos!
+      </p> 
+
+      <img src="./images/salgados.jpg" alt="imagem de salgados">
+    </section>
+
+   <section class="section-2">
+     <p>Gostamos de comer um pouco de tudo … </br>
+     </br>
+      Durante a semana, gostamos de comida saudável e nos finais de </br>
+       semana adoramos doces, tortas, massas e salgados. </br>
+      </br>
+      
+      Também somos adeptos da “segunda sem carne” e nos dias </br>
+       corridos recorremos ao nosso famoso PF. </br>
+      </br>
+      
+      Somos plurais, múltiplos e democráticos na hora de comer!</p>
+   </section>
+
+    <section class="section-3">
+      <img src="./images/doce.jpg" alt="imagem de doce">
+
+      <div>
+        <p>Você também? </br>
+          <span class="text-orange"> O PRONTOSHOP foi criado </br>
+          para pessoas assim. </span>
+          
+          Um shopping online de </br>
+          comida boa que traz </br>
+          variedade e praticidade na </br>
+          sua alimentação.
+        </p>
+      </div>
+    </section>
+
+
+   <section class="section-4">
+     <p>Um só lugar. Um só carrinho. </br>
+       <span>Uma variedade incrível de comida para todos os gostos!</span>
+     </p>
+   </section>
+
+   <div class="brands">
+      <p>Acesse as marcas que fazem parte do PRONTOSHOP e compre em </br>
+        um só lugar tudo o que você precisa para ser feliz quando o </br>
+        assunto é comida. E pronto!
+      </p>
+
+      <div class="brands-container">
+        <div class="brand">
+          <img src="./images/eu-quero1.jpg" alt="logo das marcas">
+          <button>EU QUERO!</button>
+        </div>
+
+        <div class="brand">
+          <img src="./images/eu-quero2.jpg" alt="logo das marcas">
+          <button>EU QUERO!</button>
+        </div>
+
+        <div class="brand">
+          <img src="./images/eu-quero3.jpg" alt="logo das marcas">
+          <button>EU QUERO!</button>
+        </div>
+
+        <div class="brand">
+          <img src="./images/eu-quero1.jpg" alt="logo das marcas">
+          <button>EU QUERO!</button>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
